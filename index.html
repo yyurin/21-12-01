@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+	body{margin: 0; background-color: black;background-image: url(bg.png);}
+.container{width: 1600vh; display: flex; position: relative;}
+
+.box{height: 100vh; border-right: 1px solid white;}
+.box3{width: 190vh; height: 100vh;}
+
+
+/*gif 스타일*/
+.box1{width: 12vh;}
+.gif{background: url(scroll.png); 
+		      background-size: 12vh auto; animation:gif 2.22s infinite linear;}
+			@keyframes gif{
+				from{background-position:0 0;} 
+				to{background-position: 0 97vh;}}
+
+/* 탑 박스 스타일*/
+.topbox{height: 7vh; border-bottom: 1px solid white; display: flex;}
+#star{width: 3.5vh; height: auto; position: absolute; right: 2vh; top: 2vh;}
+
+/*중간 박스 스타일 */
+.box2{width: 1600vh; height: 100vh;}
+.middlebox{height: 70vh;border-bottom: 1px solid white; display: flex; position: relative;}
+.smallbox{width: 110vh; height: 70vh; border-right:1px solid white;}
+.smallbox1{width: 65vh; height: 70vh; border-right:1px solid white;}
+.smallbox2{width: 95vh; height: 70vh; border-right:1px solid white;}
+.smallbox3{width: 50vh; height: 70vh; border-right:1px solid white;}
+
+.text{color: white; font-family:300; font-size: 1.5em; line-height: 1.7; position: absolute;left: 7vh; top: 5vh;}
+#img{width: 55vh;}
+.image {height:70vh; width: 85vh; border-right:1px solid white; position: relative;}
+
+		#planet1{position:relative; top: 3vh; left:4vh; width:30vh; 
+        		transform: scale(1); rotate: 28deg
+  				-webkit-transform: scale(1);
+  				-moz-transform: scale(1);
+  				-ms-transform: scale(1);
+  				-o-transform: scale(1);
+  				transition: all 0.3s ease-in-out;}
+   
+		#planet1:hover {transform: scale(1.2);
+  						-webkit-transform: scale(1.2);
+  						-moz-transform: scale(1.2);
+ 						 -ms-transform: scale(1.2);
+ 						 -o-transform: scale(1.2);}
+
+ 		#planet2{position: relative; top: -3vh; left:-3vh; width:20vh; 
+        		transform: scale(1); rotate: 28deg
+  				-webkit-transform: scale(1);
+  				-moz-transform: scale(1);
+  				-ms-transform: scale(1);
+  				-o-transform: scale(1);
+  				transition: all 0.3s ease-in-out;}
+
+  		#planet2:hover {transform: scale(1.2);
+  						-webkit-transform: scale(1.2);
+  						-moz-transform: scale(1.2);
+ 						 -ms-transform: scale(1.2);
+ 						 -o-transform: scale(1.2);}
+
+ 		#planet3{position: relative; top: -2vh; left:0vh; width:28vh; 
+        		transform: scale(1); rotate: 28deg
+  				-webkit-transform: scale(1);
+  				-moz-transform: scale(1);
+  				-ms-transform: scale(1); 
+  				-o-transform: scale(1);
+  				transition: all 0.3s ease-in-out;}
+
+  		#planet3:hover {transform: scale(1.2);
+  						-webkit-transform: scale(1.2);
+  						-moz-transform: scale(1.2);
+ 						 -ms-transform: scale(1.2);
+ 						 -o-transform: scale(1.2);}
+ 		#planet4{position: relative; top: -34vh; left:15vh; width:24vh; 
+        		transform: scale(1); rotate: 28deg
+  				-webkit-transform: scale(1);
+  				-moz-transform: scale(1);
+  				-ms-transform: scale(1);
+  				-o-transform: scale(1);
+  				transition: all 0.3s ease-in-out;}
+
+  		#planet4:hover {transform: scale(1.2);
+  						-webkit-transform: scale(1.2);
+  						-moz-transform: scale(1.2);
+ 						 -ms-transform: scale(1.2);
+ 						 -o-transform: scale(1.2);}
+
+ 		#planet5{position: relative; top: -27vh; left:14vh; width:43vh; 
+        		transform: scale(1); rotate: 28deg
+  				-webkit-transform: scale(1);
+  				-moz-transform: scale(1);
+  				-ms-transform: scale(1);
+  				-o-transform: scale(1);
+  				transition: all 0.3s ease-in-out;}
+
+  		#planet5:hover {transform: scale(1.2);
+  						-webkit-transform: scale(1.2);
+  						-moz-transform: scale(1.2);
+ 						 -ms-transform: scale(1.2);
+ 						 -o-transform: scale(1.2);}
+
+
+ 	#poster1{width: 50vh; position: relative; left: 7vh;}
+	.newstext1{color: white; font-family:300; font-size: 1.3em; line-height: 1.7;
+				position: relative; left:2vh; top: 5vh;}
+
+
+		.highlight.two-highlight {
+		background: -webkit-linear-gradient(left, #fe88ff 0%, #c2a4ff 100%);
+		background: -o-linear-gradient(left, #fe88ff 0%, #c2a4ff 100%);
+		background: linear-gradient(to right, #fe88ff 0%, #c2a4ff 100%); 
+		}
+
+	.ad1{height: 70vh;}
+
+			#warning1{position: relative; width: 40vh;
+		    			top: 1vh; left: -2vh; z-index: 1;
+		    animation: warning1 4s ease-in-out infinite alternate;}
+		    @keyframes warning1 {from{top: 30vh;} to{top: 1vh;}}
+	
+			#warning2{position: relative; width: 50vh;
+		    			top: 7vh; left: 6vh; z-index: 2;
+		    animation: warning2 3.3s ease-in-out infinite alternate;}
+		    @keyframes warning2 {from{top: 40vh;} to{top: 7vh;}}
+
+		    #warning3{position: relative; width: 30vh;
+		    			top: 2vh; left: -4vh; z-index: 3;
+		    animation: warning3 3s ease-in-out infinite alternate;}
+		    @keyframes warning3 {from{top: 35vh;} to{top: 2vh;}}
+
+		    #warning4{position: relative; width: 40vh;
+		    			top: 0vh; left: 6vh; z-index: 2;
+		    animation: warning4 3.3s ease-in-out infinite alternate;}
+		    @keyframes warning4 {from{top: 40vh;} to{top: 0vh;}}
+
+		    #warning5{ width: 25vh;
+		    			top: 0vh; left: 6vh; z-index: 2;
+		    animation: warning5 3.3s ease-in-out infinite alternate;}
+		    @keyframes warning5 {from{top: 30vh;} to{top: -10vh;}}
+
+
+
+/*바텀박스 스타일 */
+			.bottombox{height: 15vh;border-bottom: 1px solid white; display: flex; position: relative;}
+		.bottom1{width: 190vh;}
+ 	#bottom{width: 13vh; height: auto; left: 15vh; top:25vh;}
+ 	#bottom2 {left: 145vh; height: auto;top:25vh;}
+ 	#bottom3{width: 5vh; height: auto;left: 200vh; top:25vh;}
+ 	#bottom4{width: 16vh; height: auto; right: 13vh; top:25vh;}
+ 	.footer{color: gray; font-family:200; font-size: 0.8em; line-height: 1.3; position: absolute; right: 3vh; top: 94.2vh;}
+
+ 	 #hash1{background-color: white; width: 20vh; height: 5vh; border-radius: 50px; margin: auto;
+    	font-family: 'Noto Sans KR', word-break: keep-all;
+    	font-weight: 500; font-size: 2.2em; text-align: center; position: left: 5vh top: 1vh;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   
+
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="box box1 gif">
+</div>
+
+<div class="box box2">
+	<div class="topbox">
+		<img src="star.png" id="star">
+	</div>
+	
+
+	<div class="middlebox" >
+		<div class="smallbox">
+		<div class="text">
+		<img src="tittle.png" id="img"> 
+			<br><br><br><br><br><br><br>	우주 부동산은 하루가 다르게 치솟는 대한민국 집 값에, 차라리 <br>우주에 집을 사는게 빠르겠다 싶은 여러분들을 위한 집을 제공합니다. <br>가장 멀지만 대한민국보다는 가까울 집을 만나보세요.
+			<br><br>
+			Space real estate provides a house for those who think it would be <br>
+			faster to buy a house in space at the soaring price of Korean homes <br>
+			every day. Meet a house that is farthest but closer than Korea.</div></div>
+
+					<div class=image>
+					<img src="poster1.png" id=planet1>
+					<img src="poster2.png" id=planet2>
+					<img src="poster3.png" id=planet3>
+					<img src="poster4.png" id=planet4>
+					<img src="poster5.png" id=planet5>
+
+				</div>
+
+				<div class="smallbox1">
+							<img src="poster1.png" id="poster1"></div> 
+							
+						<div class="smallbox2">
+							<div class="newstext1">
+
+							<br>
+
+							<span class="highlight two-highlight">우주건설산업연구원(건산연)과 신용평가기관 유니버스크레딧뷰로(UCB)</span>는 23일 ‘유로파 무주택 30·40대 <br>
+							주택 구매여력 분석’ 보고서를 내고 이렇게 밝혔다.
+							<br><br>
+							최근 주택시장을 주도해왔던 30·40대는 충분한 구매여력을 바탕으로 정부의 공급 신호에 구애받지 않고 부동산을 <br> 
+							매입하는 특성을 나타냈다. 여기서 구매여력이란 주택을 구입하기 위해 조달할 수 있는 최대 자기자본과 <br>
+							현재 수준의 금융규제 상황에서 금융기관으로부터 차입할 수 있는 금액을 더한 액수다. 지금까지는 소득 대비 <br>
+							가계대출 비율(LTI)이나 총부채상환비율(DTI) 현황 등을 종합적으로 고려할 때 금융 여력이 있는 계층이<br>
+							시장에 진입했다는 것이다.
+							<br><br>
+							무주택자로 남아있는 30·40대도 집값 변동이나,<span class="highlight two-highlight">대출규제와 상관 없이 주택을 구입할 여력이 충분하다고 판단했다. </span><br>
+							특히 유로파 무주택자는 <span class="highlight two-highlight">대출을 최대로 받지 않아도 현재 전세로 거주 중인 주택은 물론 중위 가격 주택을 <br>
+							구입하는데 무리 없다고 조사됐다.</span> 유로파 상부 지역은 유로파 상부 지역은 거주인들이 현재 임차하고 있는 주택을 <br>
+							매수 구매가 가능할 정도로 <span class="highlight two-highlight">합리적인 가격을 자랑하며,</span> 신도시인 만큼 인프라가 잘 갖추어져 있어 다른<br> 
+							행성에서부터의 이주가 잦아진걸로 파악됐다. 
+
+						</div></div>
+
+
+						<div class="smallbox3">
+							<div class="ad1">
+								 <img src="warning-01.png" id="warning1">
+								 <img src="warning-02.png" id="warning2">
+								 <img src="warning-03.png" id="warning3">
+								 <img src="warning-04.png" id="warning4">
+								 <img src="warning-05.png" id="warning5">
+							</div>
+						</div>
+					
+		
+	</div>
+	
+
+<div class="bottombox">
+	<div class="bottom1">
+	<img src="bottom acc.png" id="bottom">
+	<img src="bottom acc2.png" id="bottom2">
+	<img src="bottom acc3.png" id="bottom3">
+	<img src="bottom acc4.png" id="bottom4">
+	</div>
+
+	<div class="bottom2">
+		<div id="hash1"> x 수도권 </div>
+	</div></div>
+	<div class="footer">
+		Designed by Yurin Oh ©2021 all rights reserved <br>
+			Contact: yurimkam@naver.com
+		</div> </div>
+
+</div></div>
+			
+		
+
+
+</body>
+</html>
